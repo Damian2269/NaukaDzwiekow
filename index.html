@@ -1,0 +1,243 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+      <title>Nauka dźwięków</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		
+		<style>
+			#content
+			{
+			background-color: 
+				position: fixed;
+				 left:0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+				width: 100vw;
+				height: 100vh;
+				width: 100%;
+				height: 100%;
+				
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				background-position: center;
+			}
+			
+			.wrapper { 
+  height: 100%;
+  width: 100%;
+  left:0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+background-size: 1800% 1800%;
+
+-webkit-animation: rainbow 18s ease infinite;
+-z-animation: rainbow 18s ease infinite;
+-o-animation: rainbow 18s ease infinite;
+  animation: rainbow 18s ease infinite;}
+
+@-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes rainbow { 
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+
+a {
+  text-decoration:none;
+  color:#FFF;
+}
+.rainbow-button {
+position: absolute;
+bottom: 0;
+left: 50%;
+transform: translate(-50%, -5%);
+  width:calc(17vw + 6px);
+  height:calc(6vw + 6px);
+  background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+  border-radius:5px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-transform:uppercase;
+  font-size:2.5vw;
+  font-weight:bold;
+}
+.rainbow-button:after {
+  content:attr(alt);
+  width:17vw;
+  height:6vw;
+  background-color:#191919;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.rainbow-button:hover {
+  animation:slidebg 2s linear infinite;
+}
+
+@keyframes slidebg {
+  to {
+    background-position:17vw;
+  }
+  
+  
+}
+  .tekst_podziekowania
+  {
+  position: fixed;
+width: 45vw;
+margin-left: auto;
+margin-right: auto;
+top: 2%;
+left: 27.5vw;
+height: 30vh;
+transform: translate(0%, 0%);
+
+font-size: 47px;
+  }
+  
+  #shadowBox {
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.2);
+  /* Black w/opacity/see-through */
+  border: 3px solid;
+}
+
+.rainbow {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 42px;
+  font-family: monospace;
+  letter-spacing: 5px;
+  animation: colorRotate 6s linear 0s infinite;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .tekst_podziekowania
+  {
+  position: fixed;
+width: 70vw;
+margin-left: auto;
+margin-right: auto;
+top: 2%;
+left: 15vw;
+height: 50vh;
+transform: translate(0%, 0%);
+
+  }
+ .rainbow
+ {
+ font-size: 22px;
+}
+
+.rainbow-button {
+position: absolute;
+bottom: 0;
+left: 50%;
+transform: translate(-50%, -5%);
+  width:calc(35vw + 6px);
+  height:calc(16vw + 6px);
+  background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+  border-radius:5px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-transform:uppercase;
+  font-size:5vw;
+  font-weight:bold;
+}
+.rainbow-button:after {
+  content:attr(alt);
+  width:35vw;
+  height:16vw;
+  background-color:#191919;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.rainbow-button:hover {
+  animation:slidebg 2s linear infinite;
+}
+ }
+
+@keyframes colorRotate {
+  from {
+    color: #6666ff;
+  }
+  10% {
+    color: #0099ff;
+  }
+  50% {
+    color: #00ff00;
+  }
+  75% {
+    color: #ff3399;
+  }
+  100% {
+    color: #6666ff;
+  }
+}
+
+body
+{
+overflow: hidden;
+}
+
+	</style>
+
+	</head>
+   <body>
+   
+				<script>
+
+
+function losujDziekowanie() {
+
+obrazy=["https://www.truck1-pl.com/img/Maszyna_rolnicza_Ciagnik_rolniczy_New_Holland_T6_145_AC_AutoCommand_NY_overgemt_traktor-xxl-7276/7276_4723392332243.jpg ","https://www.artdeco.sklep.pl/galerie/m/model-traktor-ciagnik-lanz-bulldog-1939-prezent-dla-rolnika_21661.gif ","https://www.traktorpool.pl/media/1112/4311112/23759875/Traktoren-Solis-23759875.jpg?width=800&height=600&quality=80 ","https://www.partyrama.co.uk/wp-content/uploads/2019/01/official-jurassic-world-t-rex-tyrannosaurus-rex-dinosaur-lifesize-cardboard-cutout-100cm-product-image.jpg ","https://jokomisiada.pl/eng_pl_Very-soft-rubber-squeaky-dinosaur-toy-ZA0902-9715_9.jpg ","https://cdn.britannica.com/83/211283-131-3DB62136/Tyrannosaurus-Rex-Struthiomimus-dinosaurs.jpg ","https://przemekzwiedza.pl/wp-content/uploads/2018/10/niedzwiedz_brunatny_ikona-800x445.jpg ","https://gfx.wiadomosci.radiozet.pl/var/radiozetwiadomosci/storage/images/swiat/colin-dowler-zaatakowany-przez-niedzwiedzia-grizzly.-uratowal-go-scyzoryk/4764093-1-pol-PL/Niedzwiedz-zaatakowal-rowerzyste.-Uratowal-go-maly-scyzoryk_article.jpg ","https://ocdn.eu/pulscms-transforms/1/Y3Ak9kqTURBXy9lYTQ4ZDExNWI0MTk5MzIzM2VkZjVhODEzZjRmZDI0MC5qcGVnk5UDAGXNEqfNCn2TBc0DFM0BvJMJpjRkMjhhNQaBoTAB/rosja-niedzwiedz-zjadl-nastolatka-na-kamczatce.jpg ","https://dinoanimals.pl/wp-content/uploads/2017/05/Niedzwiedz-kodiacki_kodiak-15.jpg ","https://dw8stlw9qt0iz.cloudfront.net/0cPgl3_mb421dLfdkojpO3UEVkg=/2000x2000/filters:format(jpeg):quality(75)/curiosity-data.s3.amazonaws.com/images/content/thumbnail/standard/0933fc48-db92-420c-8405-c7133a85d110.png"]
+		
+
+los=Math.floor((Math.random() * 11) );
+document.getElementById("content").style.backgroundImage= "url("+obrazy[los]+")";
+new Audio('dzwiek.mp3').play();
+}
+</script>
+         <div  class="wrapper"> 
+			<section>
+				<div id="content">
+					<div id="shadowBox">
+
+						<div id="dzieki" class="tekst_podziekowania rainbow" >Nauka dźwięków z Żurkiem</div>
+
+			</div>
+					
+					<a id="start" href="#" class="rainbow-button" alt="DŹwięk" onclick="losujDziekowanie()"></a>
+				</div>
+			</section>
+			
+		</div><!-- end wrapper -->
+		
+
+	</body>
+</html>
